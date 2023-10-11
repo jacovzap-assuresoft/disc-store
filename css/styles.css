@@ -1,0 +1,36 @@
+.title-section { 
+    text-align: center;
+    padding: 10px;
+}
+
+.products-section { 
+    padding-left: 750px;
+    padding-right: 750px;
+}
+
+.item-card { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.normal-button { 
+    width: 70px;
+    background-color: gray;
+    padding: 7px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.deluxe-button { 
+    width: 70px;
+    background-color: darkgoldenrod;
+    padding: 7px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
