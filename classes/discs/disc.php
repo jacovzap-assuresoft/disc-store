@@ -1,5 +1,5 @@
 <?php
-require_once '../editions/edition.php';
+include('../editions/edition.php');
 
 abstract class Disc {
      private $edition;

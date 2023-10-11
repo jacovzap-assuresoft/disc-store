@@ -36,7 +36,6 @@
         $digital_normal_disc->calculateCost();
         $physical_normal_disc->calculateCost();
 
-
         $digital_deluxe_disc = new DigitalDisc($deluxe_edition);
         $physical_deluxe_disc = new PhysicalDisc($deluxe_edition);
 
@@ -47,16 +46,16 @@
         <div>
             <div class="item-card">
                 <p> Buy digital copy</p>
-                <button class="normal-button"><?php echo $physical_deluxe_price;
-                                                $sales_history->addSale($digital_normal_disc) ?> $
+                <button class="normal-button"><?php echo $digital_normal_disc->getCost();
+                                                ?> $
                 </button>
             </div>
             <div class="item-card">
                 <p>
                     Buy physical copy
                 </p>
-                <button class="normal-button"><?php echo $physical_deluxe_price;
-                                                $sales_history->addSale($physical_normal_disc) ?> $
+                <button class="normal-button"><?php echo $physical_normal_disc->getCost();
+                                                ?> $
                 </button>
             </div>
         </div>
@@ -67,14 +66,14 @@
         <div>
             <div class="item-card">
                 <p> Buy deluxe digital copy</p>
-                <button class="deluxe-button"><?php echo $physical_deluxe_price;
-                                                $sales_history->addSale($digital_deluxe_disc) ?> $
+                <button class="deluxe-button" onclick=<?php echo $digital_deluxe_disc->getCost(); ?>>
+                    <?php echo $digital_deluxe_disc->getCost();  ?> $
                 </button>
             </div>
             <div class="item-card">
                 <p> Buy deluxe physical copy</p>
-                <button class="deluxe-button"><?php echo $physical_deluxe_price;
-                                                $sales_history->addSale($physical_deluxe_disc) ?> $
+                <button class="deluxe-button" onclick=<?php echo $digital_deluxe_disc->getCost(); ?>>
+                    <?php echo $physical_deluxe_disc->getCost(); ?> $
                 </button>
             </div>
         </div>

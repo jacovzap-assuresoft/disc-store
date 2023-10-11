@@ -6,8 +6,7 @@ class DigitalDisc extends Disc{
     public function calculateCost()
     {
         $edition_cost = $this->getEdition()->generateEditionCost();
-        $this->cost = $edition_cost * 0.5;
+        $this->cost = $edition_cost + 1;
     }
-    
 }
 ?>

@@ -6,7 +6,7 @@ class NormalEdition implements LaunchEditions {
  
     public function generateLaunchCost()
     {
-        return 1.99;
+        return 2.99;
     }
 
     public function generateEditionCost()

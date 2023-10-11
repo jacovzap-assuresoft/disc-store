@@ -1,5 +1,5 @@
 <?php
-require_once './discs/disc.php';
+include('./discs/disc.php');
 
 class SalesHistory{
    private $sales = array();

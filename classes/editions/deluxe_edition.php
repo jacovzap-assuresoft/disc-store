@@ -6,11 +6,11 @@ class DeluxeEdition implements LaunchEditions
 
     public function generateLaunchCost()
     {
-        return 1.99;
+        return 3.99;
     }
 
     public function generateEditionCost()
     {
-        return 11.99 + $this->generateLaunchCost();
+        return 8.99 + $this->generateLaunchCost();
     }
 }

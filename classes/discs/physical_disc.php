@@ -5,7 +5,8 @@ class PhysicalDisc extends Disc{
 
     public function calculateCost()
     {
-        $this->cost = 19.99;
+        $edition_cost = $this->getEdition()->generateEditionCost();
+        $this->cost = $edition_cost + 7;
     }
 }
 ?>
