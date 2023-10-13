@@ -18,7 +18,7 @@
         <?php
         require_once 'classes/discs/digital_disc.php';
         require_once 'classes/discs/physical_disc.php';
-
+        
         require_once 'classes/editions/edition.php';
         require_once 'classes/editions/normal_edition.php';
         require_once 'classes/editions/deluxe_edition.php';

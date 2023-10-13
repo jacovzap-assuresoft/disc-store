@@ -3,7 +3,8 @@ include('../editions/edition.php');
 
 abstract class Disc {
      private $edition;
-     protected $cost = 0;
+     protected $production_cost;
+     protected $cost;
      private $album_name = "The never 'C'n Album";
 
         public function __construct(Edition $edition) {

@@ -1,6 +1,6 @@
 <?php
-
-interface Edition {
+interface Edition
+ {
     public function generateEditionCost();
 }
 ?>

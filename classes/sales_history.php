@@ -1,7 +1,8 @@
 <?php
 include('./discs/disc.php');
 
-class SalesHistory{
+class SalesHistory
+{
    private $sales = array();
 
     public function addSale(Disc $disc){
